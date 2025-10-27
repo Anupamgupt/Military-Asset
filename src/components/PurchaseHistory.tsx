@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 function PurchaseHistory() {
   const [startDate, setStartDate] = useState<Date | null>(new Date());
-  const [equipmentType, setEquipmentType] = useState("");
+  // const [equipmentType, setEquipmentType] = useState("");
   return (
     <div>
       <h1 className="text-[20px] text-medium">Purchase History</h1>
