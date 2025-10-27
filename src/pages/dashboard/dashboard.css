@@ -1,0 +1,60 @@
+/* Make the date picker input match dark theme */
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-datepicker__input-container input {
+  @apply px-4 py-[8px]
+                  rounded-lg
+                  bg-[#1F2937]        
+                  text-gray-100     
+                  border border-gray-600
+                  shadow-sm
+                  focus:outline-none
+                  focus:ring-2 focus:ring-blue-500 focus:border-transparent
+                  hover:border-blue-400
+                  transition-all duration-200 ease-in-out
+                  cursor-pointer;
+}
+.react-datepicker-wrapper {
+  width: auto; /* so input fits content */
+}
+
+/* Calendar pop-up styling */
+.react-datepicker {
+  @apply bg-gray-800 text-gray-100 rounded-lg shadow-lg ;
+  border: none;
+}
+
+/* Header (month/year) */
+.react-datepicker__header {
+  @apply bg-transparent text-gray-100 border-b border-gray-600 ;
+}
+
+/* Day names */
+.react-datepicker__day-name {
+  @apply text-gray-400;
+}
+
+/* Days */
+.react-datepicker__day {
+  @apply text-gray-100 hover:bg-amber-500 hover:text-gray-600 rounded-full;
+}
+
+/* Selected day */
+.react-datepicker__day--selected {
+  @apply bg-amber-500 text-white rounded-full;
+}
+
+/* Today highlight */
+.react-datepicker__day--today {
+  @apply border border-amber-400;
+}
+
+/* Navigation arrows */
+.react-datepicker__navigation-icon::before {
+  @apply border-gray-800;
+}
+
