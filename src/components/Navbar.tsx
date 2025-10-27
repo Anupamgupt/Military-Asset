@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="flex justify-center items-center  w-full bg-[#263441]  h-14 p-3 border-b border-gray-700 fixed t-0 z-20">
+    <nav className="flex justify-center items-center  w-full bg-[#263441]  h-14 p-3 border-b border-gray-700 fixed top-0 z-20">
         <div className="flex-1 flex items-center gap-3 text-amber-50 pl-4 ">
             <BsShield strokeWidth={1}/>
             <p className="text-xl font-light ">Military Asset Management</p>
